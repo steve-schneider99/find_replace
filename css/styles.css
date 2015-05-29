@@ -1,0 +1,10 @@
+#user_sentence {
+  display: none;
+}
+
+#input_sentence {
+  font-size: 150%
+}
+#replace_result {
+  display: none;
+}
