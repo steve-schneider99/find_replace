@@ -6,6 +6,6 @@ describe('findWord', function() {
 
 describe('replaceWord', function() {
   it('replaces a word in an array with a different specified word', function() {
-    expect(replaceWord("cat", "dog")).to.equal("dog")
+    expect(replaceWord("the cat meows", "cat", "dog")).to.equal("the dog meows ")
   });
 });

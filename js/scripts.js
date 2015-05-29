@@ -7,15 +7,16 @@ var findWord = function(word1, word2) {
 };
 
 var replaceWord = function(sentence, original, replacement) {
-  inputArray = sentence.split(" ");
-  inputArray.forEach(function(word, index) {
+  var inputArray = sentence.split(" ");
+  var outputText = ""
+  inputArray.forEach(function(word) {
     if (original === word) {
-      inputArray[index] = replacement;
+      outputText += (replacement + " ");
   } else {
+    outputText += (word + " ");
   }
 });
-  inputArray.join(" ");
-  return inputArray;
+  return outputText;
 }
 
 $(document).ready(function() {
