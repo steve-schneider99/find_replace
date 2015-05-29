@@ -10,25 +10,19 @@
   <body>
     <div class='container'>
       <h1>Find and Replace Program</h1>
-      <form id='initial_input'>
+      <form id='find_replace'>
         <label for='input_string'>Enter a sentence to begin:</label>
         <input id='input_string' type='text'>
+        <br>
+        <label for='target_word'>Enter a word that you want to replace:</label>
+        <input id='target_word' type='text'>
+        <br>
+        <label for="new_word">Enter a word to replace it with:</label>
+        <input id='new_word' type='text'>
+        <br>
         <button type='submit'>Submit</button>
       </form>
-
-      <div id='user_sentence'>
-        <p>Your sentence is:</p>
-        <p><span id='input_sentence'></span></p>
-
-        <form id='find_replace'>
-          <label for='target_word'>Enter a word that you want to replace:</label>
-          <input id='target_word' type='text'>
-          <label for="new_word">Enter a word to replace it with:</label>
-          <input id='new_word' type='text'>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
+        <br>
       <div id='replace_result'>
           <p>Your new sentence is: <span class='new_sentence'></span></p>
       </div>
