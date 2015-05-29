@@ -6,7 +6,18 @@ var findWord = function(word1, word2) {
   }
 };
 
+var replaceWord = function(original, replacement) {
+  var inputArray = inputString.split(" ")
+  inputArray.forEach(function(word, index) {
+    if (original === word) {
+      inputArray[index] = replacement;
+    } else {
 
+    }
+  });
+  inputArray.join(" ");
+  return inputArray;
+}
 
 
 
@@ -14,11 +25,20 @@ var findWord = function(word1, word2) {
 
 
 $(document).ready(function() {
-  $('form#initial_input').submit(function(event) {
-    var input_string = ($('input#input_string').val());
+  $('form#find_replace').submit(function(event) {
+    var targetWord = ($('input#target_word').val());
+    var newWord = ($('input#new_word').val());
+    var result = replaceWord(targetWord, newWord);
 
-    $('span#input_sentence').text(input_string)
-    $('#user_sentence').show();
+    debugger;
+
+
+    $('#user_sentence').show()
+    $('#replace_result').show();
     event.preventDefault();
   });
+
+
+
+
 });
