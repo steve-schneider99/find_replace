@@ -14,8 +14,8 @@ var replaceWord = function(sentence, original, replacement) {
       outputText += (replacement + " ");
   } else {
     outputText += (word + " ");
-  }
-});
+    }
+  });
   return outputText;
 }
 

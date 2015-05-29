@@ -8,7 +8,6 @@ describe('replaceWord', function() {
   it('replaces a word in a sentence with a different specified word', function() {
     expect(replaceWord("the cat meows", "cat", "dog")).to.equal("the dog meows ")
   });
-
   it('replaces a word in multiple places in a sentence with a different specified word', function() {
     expect(replaceWord("the cat cat cat meows", "cat", "dog")).to.equal("the dog dog dog meows ")
   });

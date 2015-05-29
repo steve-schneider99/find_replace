@@ -2,13 +2,14 @@ body {
   text-align: center;
 }
 
-#user_sentence {
+#replace_result {
+
+  font-size: 150%;
   display: none;
+  text-align: center;
 }
 
-#input_sentence {
-  font-size: 150%
-}
-#replace_result {
-  display: none;
+button.stretch {
+  margin-top: 20px;
+  width: 50%;
 }
